@@ -1,0 +1,53 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+/*base: like h1,h2 */
+/*components: like card any component */
+
+/*utilities: like انو اسم باستحدمه في الكلاس حق الستايل */
+
+@layer utilities {
+    .duration-high {
+      @apply transition-all duration-300 ease-in-out;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .spin {
+    animation: spin 40s linear infinite;
+  }
+  
